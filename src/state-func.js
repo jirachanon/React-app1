@@ -20,7 +20,7 @@ export default function MessageBox() {
     let msgboxSyle = {
         display: 'inline-block',
         width: 350,
-        fontSize: size, //ใช้ค่าจาก State
+        fontSize: size, 
         backgroundColor: '#ccc',
         padding: 5,
         textAlign: 'left'
