@@ -29,7 +29,7 @@ export default function FormCheck(){
                 alert('Please select style')
                 return
             }else if(checkedSize === ''){
-                alert('Please selext size')
+                alert('Please select size')
                 return
             }
         }
@@ -47,7 +47,7 @@ export default function FormCheck(){
                     style.map((st, i) => {
                         return(
                             <div className="form-check form-check-inline mb-2">
-                                <input type="checkbox" id={'check'+i} value={st}
+                                <input type="checkbox" id={'check'+i} value={st} 
                                     className="form-check-input" onChange={onChangeCheck}/>
                                 <label htmlFor={'check'+i} className="form-check-label">{st}</label>
                             </div>
@@ -60,7 +60,7 @@ export default function FormCheck(){
                     size.map((sz, i) => {
                         return(
                             <div className="form-check form-check-inline mb-2">
-                                <input type="radio" id={'radio'+i} value={sz}
+                                <input type="radio" id={'radio'+i} value={sz} name="fontSize"
                                     className="form-check-input" onChange={onChangeRadio}/>
                                 <label htmlFor={'radio'+i} className="form-check-label">{sz}</label>
                             </div>
